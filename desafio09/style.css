@@ -1,0 +1,45 @@
+/*Configuraçãoes para aceitação de acentuação:*/
+@charset "UTF-8";
+
+/*Configuraçãoes gerais:*/
+body{
+    background-color: #384F59;
+}
+
+/*Configurações por elementos para todas as paginas:*/
+main{
+    background-color: #3C738C;
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 5px 5px 15px #45626dd2;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.imagem{
+    border-radius: 2%;
+}
+
+.video{
+    width: 460px;
+    height: 215px;
+}
+
+.link-ext{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.link-prev{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}

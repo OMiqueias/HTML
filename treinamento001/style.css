@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*Configuração geral do body*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+/*Configurão geral da div*/
+div{
+    background-color: rgba(182, 182, 182, 0.182);
+    display: flex;
+    border-bottom: 2px solid gray;
+    border-radius: 3px;
+}
+
+/*Configuração geral do p*/
+p{
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+/*Configuração do footer*/
+.footer{
+    height: 40px;
+    margin: 0px;
+    background-color: gray;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*Configuração link no <p> do Hoje no Mundo Militar*/
+.link-t{
+    text-decoration: none;
+    color:black;
+}
+
+.link-t:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.link-t:active{
+    color: rgb(0, 27, 0);
+}
+/*Fim configuração link no <p> do Hoje no Mundo Militar*/
+
+
+/*Configuração dos ids*/
+div#img:hover{
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+div#cev-color:hover{
+    background-color: blue;
+    color: white;
+}
+
+div#hmm-color:hover{
+    background-color: rgb(63, 83, 54);
+    color: white;
+}
+
+div#ms-color:hover{
+    background-color: rgb(97, 97, 97);
+    color: white;
+}
+
+div#nfx-color:hover{
+    background-color: rgb(83, 0, 128);
+    color: white;
+}

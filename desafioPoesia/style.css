@@ -66,6 +66,16 @@ section.imagem > p{
     background-color: rgba(0, 0, 0, 0.364);
 }
 
+section#img01{
+    background-image: url(img/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(img/background002.jpg);
+    background-position: right center;
+}
+
 section.normal{
     background-color: white;
     color: black;

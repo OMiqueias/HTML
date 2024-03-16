@@ -6,46 +6,76 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        caption{
             font-size: 15px;
+            margin: auto;
+            font-weight: bolder;
         }
 
         table{
             border-collapse: collapse;
-            width: 250px;
         }
 
-        td{
+        th, td{
             border: 1px solid black;
+            padding: 2px;
         }
-
     </style>
     <title>Tabela-4</title>
 </head>
 <body>
     <table>
-        <tr>
-            <td>Grupo</td>
-            <td>Nomes</td>
-            <td>Filmes</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Mulheres</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Homens</td>
-        </tr>
-        <tr>
-
-        </tr>
-        <tr>
-
-        </tr>
-        <tr>
-
-        </tr>
-        <tr>
-
-        </tr>
+        <caption>Filmes preferidos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudi Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Gladiadores</td>
+                <td>300</td>
+                <td>Homem do futuro</td>
+            </tr>
+            <tr>
+                <td>João Paulo</td>
+                <td>Terror na neve</td>
+                <td>Matrix</td>
+                <td>Jogos mortais</td>
+            </tr>
+            <tr>
+                <td>Carlos Eduardo</td>
+                <td>A fantastica fabrica de chocolates</td>
+                <td>Wall-e</td>
+                <td>O justiceiro</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>

@@ -11,41 +11,58 @@
             color: black;
         }
         body{
-            background-color: black;
+            background-color: rgb(18, 16, 35);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         h1{
+            color: white;
             font-size: 15px;
             font-weight: bolder;
         }
         label{
+            font-size: 14px;
+            font-weight: bold;
             color: black;
         }
         input{
             background-color: white;
+            min-height: 20px;
+            max-height: 40px;
+            padding-left: 5px;
+            width: 95%;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: border-color 1s;
+        }
+        input:hover{
+            border-color: blue;
         }
         section{
-            max-width: 200px;
-            max-width: 300px;
-            margin: auto;
-            padding: 2px;
+            position: relative;
+            max-height: 200px;
+            max-width: 240px;
+            padding: 5px;
             border: 2px solid rgb(0, 0, 131);
-            border-radius: 3%;
+            border-radius: 5px;
             background-color: rgb(210, 210, 210);
         }
     </style>
 </head>
 <body>
-    <h1>CRIANDO FORMULÁRIO</h1>
-<section>
+    <section>
             <form action="cadastro.php" autocomplete="off">
                 <p><label for="nome">Nome:</label>
-                    <input type="text" name="name" id="nome"></p>
+                    <input type="text" name="name" id="nome" placeholder="Nome"></p>
                 <p><label for="sobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome"></p>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"></p>
                 <p><label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email"></p>
+                    <input type="email" name="email" id="email" placeholder="E-mail"></p>
                 <p><input type="submit" value="Enviar"></p>
             </form>
-</section>
+    </section>
 </body>
 </html>

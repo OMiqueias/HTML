@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - 1</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: black;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        label{
+            color: black;
+        }
+        input{
+            background-color: white;
+        }
+        section{
+            max-width: 200px;
+            max-width: 300px;
+            margin: auto;
+            padding: 2px;
+            border: 2px solid rgb(0, 0, 131);
+            border-radius: 3%;
+            background-color: rgb(210, 210, 210);
+        }
+    </style>
+</head>
+<body>
+    <h1>CRIANDO FORMULÁRIO</h1>
+<section>
+            <form action="cadastro.php" autocomplete="off">
+                <p><label for="nome">Nome:</label>
+                    <input type="text" name="name" id="nome"></p>
+                <p><label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome"></p>
+                <p><label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"></p>
+                <p><input type="submit" value="Enviar"></p>
+            </form>
+</section>
+</body>
+</html>

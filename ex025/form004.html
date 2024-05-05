@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - 3</title>
+    <style>
+        * {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        section {
+            border: 1px solid black;
+            background-color: rgb(194, 194, 194);
+            width: 50%;
+            height: 25%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="cadastro.php" method="post">
+
+            <label for="iest">Selecione o Estado:</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+                <optgroup label="Região Suldeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Mato Grosso</option>
+                    <option value="GO">Goiás</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PR">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="BH">Bahia</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="PN">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+
+            <section>
+                <form action="cadastro.php" method="post">
+                    <label for="numb1">Numero 1:</label>
+                    <input type="number" name="number1" id="numb1" required oninput="isoma.innerHTML = Number(numb1.value)+Number(numb2.value)">
+
+                    <label for="numb2">Numero 2:</label>
+                    <input type="number" name="number2" id="numb2" required oninput="isoma.innerHTML = Number(numb1.value)+Number(numb2.value)">
+
+                    <label for="isoma">Soma:</label>
+                    <output name="soma" id="isoma">0</output>
+                </form>
+            </section>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/*
+
+TYPICAL DEVICE BREAKPOITS (Ref: W3C).
+
+Pequenas telas: Até 600px.
+Celular: 600px à 768px.
+Tablets: 768px à 992px.
+Computadores: 992px à 1200px.
+Grandes telas: Igual ou maiores que 1200px.
+
+*/
+
+@media print {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    main{
+        border: 1px solid black;
+        border-radius: 0;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    img#iPhone {
+        display: none;
+    }
+
+    img#iTablet {
+        display: none;
+    }
+
+    img#iPrint {
+        display: block;
+    }
+
+    img#iPc {
+        display: none;
+    }
+
+    img#iTv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:780px) and (max-width: 992px) {
+    body {
+        background: black url(../img/back-tablet.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#iPhone {
+        display: none;
+    }
+
+    img#iTablet {
+        display: block;
+    }
+
+    img#iPrint {
+        display: none;
+    }
+
+    img#iPc {
+        display: none;
+    }
+
+    img#iTv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    body {
+        background: black url(../img/back-pc.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#iPhone {
+        display: none;
+    }
+
+    img#iTablet {
+        display: none;
+    }
+
+    img#iPrint {
+        display: none;
+    }
+
+    img#iPc {
+        display: block;
+    }
+
+    img#iTv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: black url(../img/back-tv.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#iPhone {
+        display: none;
+    }
+
+    img#iTablet {
+        display: none;
+    }
+
+    img#iPrint {
+        display: none;
+    }
+
+    img#iPc {
+        display: none;
+    }
+
+    img#iTv {
+        display: block;
+    }
+}
